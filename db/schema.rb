@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170221133346) do
+ActiveRecord::Schema.define(version: 20081127162635) do
 
   create_table "ads", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",        limit: 255
     t.text     "description"
     t.decimal  "price"
     t.integer  "seller_id"
-    t.string   "email"
-    t.string   "img_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "email",       limit: 255
+    t.string   "img_url",     limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
