@@ -1,0 +1,29 @@
+<%= form_for(@ad) do |f| %>
+  <p>
+    <b>Name</b>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <b>Description</b>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <b>Price</b>
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <b>Seller</b>
+    <%= f.text_field :seller_id %>
+  </p>
+  <p>
+    <b>Email</b>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <b>Img url</b>
+    <%= f.text_field :img_url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
