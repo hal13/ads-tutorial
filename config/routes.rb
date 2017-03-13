@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  resources :ads, only:[:index,:show,:new,:create, :edit, :update]
+  resources :ads
   root 'ads#index'
   # root 'ads#index'
   # get 'ads/:id' => 'ads#show'
