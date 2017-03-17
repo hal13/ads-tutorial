@@ -2,7 +2,6 @@ class AdsController < ApplicationController
 
   before_filter :check_logged_in, only: [:new, :create, :edit, :update, :destroy]
   before_action :set_ad, only: [:show, :edit, :update, :destroy]
-  skip_before_filter :verify_authenticity_token, only: [:destroy]
   
   def index
     @ads = Ad.all
